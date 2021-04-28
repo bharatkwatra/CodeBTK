@@ -138,55 +138,12 @@ export default function Employee() {
         <TblContainer  className={classes.pageContent}>
             <TblHead/>
           <TableBody>
-          <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{''}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("357456.360301877")}</TableCell>
-              </TableRow>
+          {recordsAfterPagingAndSorting().map((item) => (
               <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Activity Revenue"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("8694686708.360073")}</TableCell>
+                <TableCell className={classes.tblcell}>{item.capacityCategory}</TableCell>
+                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem(item.teamCost)}</TableCell>
               </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Billed"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("9654618151.404976")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Client Development"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("1318963932.3793652")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Client Investment"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("451723868.30925286")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Global Investment Teams"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("668192767.2385403")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Internal PD"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("431947806.8679261")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"LOA (Paid)"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("420811138.801783")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Local Investment Teams"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("756376826.8008984")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Not Allocated"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("12912156265.363234")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Over Allocated"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("-270622151.6420673")}</TableCell>
-              </TableRow>
-              <TableRow key={Math.random().toString(36).substr(2, 9)}>
-                <TableCell className={classes.tblcell}>{"Pro Bono"}</TableCell>
-                <TableCell className={classes.tblcell}>{convertToInternationalCurrencySystem("235118232.75449604")}</TableCell>
-              </TableRow>
-
+            ))}
           </TableBody>
         </TblContainer>
       </Paper>
