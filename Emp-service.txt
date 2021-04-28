@@ -1,0 +1,22 @@
+let employees = getemployeedata();
+
+export function getemployeedata()
+{
+//return fetch("http://localhost:23372/api/getcategories")
+return fetch("/response_1619603782530.json")
+.then((resp) => resp.json())
+.then(function(data) {
+  console.log(data.result);
+  let authors = data.result;
+  //let employees = JSON.parse(data.result);
+  return authors.map(x => ({
+    ...x,
+    _capicitycategory: authors[x.capacityCategory],
+    _teamcost: authors[x.teamCost]
+}))
+})
+.catch(function(error) {
+  console.log(error);
+});
+
+}
