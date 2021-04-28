@@ -1,0 +1,73 @@
+{
+  "result": [
+    {
+      "capacityCategory": "",
+      "teamCost": "357456.360301877",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Activity Revenue",
+      "teamCost": "8694686708.360073",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Billed",
+      "teamCost": "9654618151.404976",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Client Development",
+      "teamCost": "1318963932.3793652",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Client Investment",
+      "teamCost": "451723868.30925286",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Global Investment Teams",
+      "teamCost": "668192767.2385403",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Internal PD",
+      "teamCost": "431947806.8679261",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "LOA (Paid)",
+      "teamCost": "420811138.801783",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Local Investment Teams",
+      "teamCost": "756376826.8008984",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Not Allocated",
+      "teamCost": "12912156265.363234",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Over Allocated",
+      "teamCost": "-270622151.6420673",
+      "totalTeamCost": null
+    },
+    {
+      "capacityCategory": "Pro Bono",
+      "teamCost": "235118232.75449604",
+      "totalTeamCost": null
+    }
+  ],
+  "id": 50,
+  "exception": null,
+  "status": 5,
+  "isCanceled": false,
+  "isCompleted": true,
+  "isCompletedSuccessfully": true,
+  "creationOptions": 0,
+  "asyncState": null,
+  "isFaulted": false
+}
